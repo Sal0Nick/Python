@@ -1,0 +1,77 @@
+from random import choice
+import time
+print(' ')
+print('\033[31m-'*35)
+print('      \033[35mPEDRA, PAPEL E TESOURA')
+print('\033[31m-'*35)
+print('            \033[1;31mJ\033[1;36mO\033[1;32mG\033[1;37mA\033[1;34mD\033[1;31mA\033[1;33mS')
+print('1 - Pedra')
+print('2 - Tesoura')
+print('3 - Papel')
+print(' ')
+print('\033[31m-'*35)
+print(' ')
+um = 'Pedra'
+dois = 'Tesoura'
+tres = 'Papel'
+l = [um, dois, tres]
+r = choice(l)
+j = int(input('Digite: '))
+print(' ')
+print('Pedra')
+print(' ')
+time.sleep(0.5)
+print('Papel')
+print(' ')
+time.sleep(0.5)
+print('Tesoura')
+time.sleep(0.5)
+print(' ')
+if r == um:
+    if j == 1:
+        print('\033[36mO computador jogou Pedra e você jogou Pedra')
+        print(' ')
+        print('\033[36mEmpate!')
+    elif j == 2:
+        print('\033[36mO computador jogou Pedra e você jogou Tesoura')
+        print(' ')
+        print('\033[31mVocê perdeu!')
+    elif j == 3:
+        print('\033[36mO computador jogou Pedra e você jogou Papel')
+        print(' ')
+        print('\033[32mVocê venceu!')
+    else:
+        print('\033[31mERRO: Digite um número válido')
+elif r == dois:
+    if j == 1:
+        print('\033[36mO computador jogou Tesoura e você jogou Pedra')
+        print(' ')
+        print('\033[32mVocê venceu!')
+    elif j == 2:
+        print('\033[36mO computador jogou Tesoura e você jogou Tesoura')
+        print(' ')
+        print('\033[36mEmpate!')
+    elif j == 3:
+        print('\033[36mO computador jogou Tesoura e você jogou Papel')
+        print(' ')
+        print('\033[31mVocê perdeu!')
+    else:
+        print('\033[31mERRO: Digite um número válido')
+elif r == tres:
+    if j == 1:
+        print('\033[36mO computador jogou Papel e você jogou Pedra')
+        print(' ')
+        print('\033[31mVocê perdeu!')
+    elif j == 2:
+        print('\033[36mO computador jogou Papel e você jogou Tesoura')
+        print(' ')
+        print('\033[32mVocê venceu!')
+    elif j == 3:
+        print('\033[36mO computador jogou Papel e você jogou Papel')
+        print(' ')
+        print('\033[36mEmpate!')
+    else:
+        print('\033[31mERRO: Digite um número válido')
+print(' ')
+print('\033[31m-'*35)
+print(' ')
